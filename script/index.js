@@ -5,9 +5,29 @@ window.alert(`This is an alert`); */
 /* document.getElementById("my-h1").textContent = "Hello";
 document.getElementById("myP").textContent = "I like pizza" */
 
-let username;
+/* let username;
 
 document.getElementById("submit").addEventListener("click", () => {
   username = document.getElementById("username").value;
   window.alert(`You are ${username}`);
+}); */
+
+let num = 0;
+
+function render() {
+  document.querySelector('.my-h1').textContent = num;
+};
+
+
+document.querySelector(".btn-danger").addEventListener("click", () => {
+  num -= 1;
+  render();
+});
+document.querySelector(".btn-success").addEventListener("click", () => {
+  num = 0;
+  render();
+});
+document.querySelector(".btn-primary").addEventListener("click", () => {
+  num += 1;
+  render();
 });
