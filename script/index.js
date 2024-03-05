@@ -36,6 +36,10 @@ document.querySelector(".btn-primary").addEventListener("click", () => {
   render();
 }); */
 
+/* 
+
+For roll dice
+
 let x;
 let y;
 let z;
@@ -49,4 +53,10 @@ document.querySelector('.roll').addEventListener("click", () => {
   document.querySelector('.x').textContent = x;
   document.querySelector('.y').textContent = y;
   document.querySelector('.z').textContent = z;
-});
+}); */
+
+let purchaseAmount = 99;
+
+let discount = purchaseAmount >= 100 ? 10 : 0;
+
+console.log(`Your total is : $${purchaseAmount - purchaseAmount * (discount/100)}`);
