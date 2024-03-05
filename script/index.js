@@ -65,6 +65,10 @@ let discount = purchaseAmount >= 100 ? 10 : 0;
 
 console.log(`Your total is : $${purchaseAmount - purchaseAmount * (discount/100)}`); */
 
+/* 
+
+For Switch Case
+
 let testScore = 90;
 let letterGrade;
 
@@ -85,4 +89,53 @@ switch(true) {
     letterGrade = "F";
 }
 
-console.log(`You're grade is ${letterGrade}`);
+console.log(`You're grade is ${letterGrade}`); */
+
+let username = "BroCode ";
+
+/* 
+
+console.log(username.charAt(0)); 
+console.log(username.lastIndexOf("o"));
+console.log(username.length); 
+username = username.trim();
+username = username.toUpperCase();
+username = username.toLowerCase();
+username = username.repeat(4);
+
+let result = username.endsWith(" ");
+
+let result = username.startsWith(" ");
+if(result) {
+  console.log("You're username can't begin with empty space")
+} else {
+  console.log(username); 
+}
+
+let result = username.includes(" ");
+
+if(result) {
+  console.log("You're username can't include with ' '")
+} else {
+  console.log(username); 
+}
+
+let phoneNumber = "123-456-7890";
+
+phoneNumber = phoneNumber.replaceAll("-", "");
+phoneNumber = phoneNumber.padStart(20,"0");
+phoneNumber = phoneNumber.padEnd(20,"0");
+
+
+
+console.log(phoneNumber);
+
+*/
+
+
+
+
+
+
+
+
