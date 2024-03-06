@@ -91,7 +91,7 @@ switch(true) {
 
 console.log(`You're grade is ${letterGrade}`); */
 
-let username = "BroCode ";
+/* let username = "BroCode "; */
 
 /* 
 
@@ -132,6 +132,29 @@ console.log(phoneNumber);
 
 */
 
+const fullName = "Kane Tagay";
+
+/* let firstName = fullName.slice(0, 3); */
+/* let lastName = fullName.slice(4); */
+
+/* let firstChar = fullName.slice(0,1);
+let lastChar = fullName.slice(-1);
+
+let lastName = fullName.slice(fullName.indexOf(" ") + 1);
+let firstName = fullName.slice(0, fullName.indexOf(" "));
+
+console.log(firstName);
+console.log(lastName);
+console.log(firstChar);
+console.log(lastChar); */
+
+const email = "Bro1@gmail.com";
+
+let username = email.slice(0, email.indexOf("@"));
+let extension = email.slice(email.indexOf("@")+1)
+
+console.log(username);
+console.log(extension);
 
 
 
