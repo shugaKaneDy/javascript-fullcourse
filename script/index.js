@@ -172,7 +172,7 @@ console.log(extension);
 
 /* No Method Chaining */
 
-let username = window.prompt("Enter your username");
+/* let username = window.prompt("Enter your username");
 
 username = username.trim();
 let letter = username.charAt(0);
@@ -183,10 +183,24 @@ extraChars = extraChars.toLowerCase();
 
 username = letter + extraChars;
 
-console.log(username);
+console.log(username); */
 
 /* With Method Chaining */
 
-username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLocaleLowerCase();
+/* username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLocaleLowerCase();
 
 console.log(username);
+ */
+
+/* let a = 0;
+let b = 1;
+let temp = 0;
+
+let num = Number(window.prompt("Enter a number"));
+console.log(a);
+while (num > b) {
+  console.log(b);
+  temp = a + b;
+  a = b;
+  b = temp;
+} */
