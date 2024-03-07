@@ -95,6 +95,8 @@ console.log(`You're grade is ${letterGrade}`); */
 
 /* 
 
+String method
+
 console.log(username.charAt(0)); 
 console.log(username.lastIndexOf("o"));
 console.log(username.length); 
@@ -132,12 +134,19 @@ console.log(phoneNumber);
 
 */
 
+
+/*
+
+String Slicing
+
 const fullName = "Kane Tagay";
 
-/* let firstName = fullName.slice(0, 3); */
-/* let lastName = fullName.slice(4); */
+String Slicing
 
-/* let firstChar = fullName.slice(0,1);
+let firstName = fullName.slice(0, 3); 
+let lastName = fullName.slice(4); 
+
+let firstChar = fullName.slice(0,1);
 let lastChar = fullName.slice(-1);
 
 let lastName = fullName.slice(fullName.indexOf(" ") + 1);
@@ -146,7 +155,7 @@ let firstName = fullName.slice(0, fullName.indexOf(" "));
 console.log(firstName);
 console.log(lastName);
 console.log(firstChar);
-console.log(lastChar); */
+console.log(lastChar); 
 
 const email = "Bro1@gmail.com";
 
@@ -156,9 +165,28 @@ let extension = email.slice(email.indexOf("@")+1)
 console.log(username);
 console.log(extension);
 
+*/
 
 
+/* Method Chaining */
 
+/* No Method Chaining */
 
+let username = window.prompt("Enter your username");
 
+username = username.trim();
+let letter = username.charAt(0);
+letter = letter.toUpperCase();
 
+let extraChars = username.slice(1);
+extraChars = extraChars.toLowerCase();
+
+username = letter + extraChars;
+
+console.log(username);
+
+/* With Method Chaining */
+
+username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLocaleLowerCase();
+
+console.log(username);
