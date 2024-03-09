@@ -267,3 +267,25 @@ function func2() {
 }
 
 */
+
+/* Array
+
+let fruits = ["apple", "orange", "banana", "coconut"];
+
+fruits.push("coconut");
+fruits.pop();
+fruits.unshift("mango");
+fruits.shift();
+
+fruits.sort().reverse();
+
+let numFruits = fruits.length
+
+fruits.forEach((value, index) => {
+  console.log(value);
+  console.log(index);
+});
+
+console.log(numFruits);
+*/
+
