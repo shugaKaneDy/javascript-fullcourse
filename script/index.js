@@ -236,3 +236,34 @@ while (running) {
     }
   }
 } */
+
+/* 
+
+functions
+
+function isValidEmail(email) {
+
+  return email.includes("@") ? true : false;
+}
+
+console.log(isValidEmail("Kane.com"));
+console.log(isValidEmail("Kane@gmail.com")); */
+
+/* 
+Variable Scope 
+-- it is not recommended to use global variables in a big program for it can be conflicted
+-- it will first see the local then global
+let x = 3;
+
+func2();
+
+function func1() {
+  let x = 1;
+  console.log(x)
+}
+function func2() {
+  let x = 2;
+  console.log(x)
+}
+
+*/

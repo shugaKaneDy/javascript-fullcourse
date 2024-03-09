@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Conversion</title>
+
+  <!-- bootstap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="style/temperature-conversion.css">
+
+</head>
+<body class="bg-light">
+
+  <main class="container display-flex justify-content-center mt-5">
+    <div class="container rounded shadow w-50 p-5">
+      <h2 class="text-primary text-center fw-bold mb-5">Temperature Conversion</h2>
+      <div class="container">
+        <div class="container d-flex justify-content-center mt-3">
+          <input type="number" id = "num" name= "num" class="text-center border border-2 border-dark rounded">
+        </div>
+        <div class="mt-3 text-center">
+          <input type="radio" id ="celcius" name = "temp">
+          <label for="celcius" class="form-label fw-bold">Celcius - Fahrenheit</label>
+        </div>
+        <div class="text-center">
+          <input type="radio" id ="fahrenheit" name = "temp">
+          <label for="fahrenheit" class="form-label fw-bold">Fahrenheit - Celcius</label>
+        </div>
+        <div class="container d-flex justify-content-center mt-3">
+          <button class="btn btn-danger" id = "mySubmit">Submit</button>
+        </div>
+        <p class="text-center h3 fw-bold mt-5" id = "answer"></p>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <script src="script/temperature-conversion.js"></script>
+</body>
+</html>
