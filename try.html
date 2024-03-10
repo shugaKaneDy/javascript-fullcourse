@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I Know Dev</title>
+  <link rel="icon" href="img/IK.png">
+
+  <!-- bootstrap -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- google fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      height: 100vh;
+      font-family: "Poppins", sans-serif;
+    }
+    .circle {
+      border-radius: 50%;
+      position: fixed;
+      right: -20px;
+      top: 20px;
+    }
+    .glass {
+      background: rgba( 255, 255, 255, 0.25 );
+      backdrop-filter: blur( 10px );
+      -webkit-backdrop-filter: blur( 4px );
+      border-radius: 10px;
+      height: 90vh;
+      width: 90vw;
+    }
+    .no-bullets {
+      list-style: none;
+      font-size: 1.25em;
+    }
+    a {
+      text-decoration: none;
+    }
+    .logo {
+      font-weight: 900 !important;
+    }
+    a:hover {
+      color: #007bbf !important; /* Change text color on hover */
+    }
+    .active {
+      color: #007bbf !important; /* Change text color on hover */
+    }
+    .orange-btn {
+      background-color: rgb(255,143,46);
+      border: none;
+    }
+    .orange-btn:hover {
+      background-color: rgb(252, 156, 71);
+    }
+    .text-orange {
+      color: rgb(255,143,46);
+    }
+    .circle {
+      background: rgb(2,117,216);
+      background: linear-gradient(90deg, rgba(2,117,216,1) 41%, rgba(13,202,240,1) 100%);
+    }
+    .rel-2 {
+      position: fixed;
+      top: 80px;
+      right: 70px;
+      transform: rotate(30deg);
+    }
+    .rel-3 {
+      position: fixed;
+      bottom: 80px;
+      right: 450px;
+      transform: rotate(-40deg);
+    }
+    .rel-4 {
+      position: fixed;
+      bottom: 0px;
+      right: 70px;
+    }
+
+
+  </style>
+
+
+</head>
+<body class="bg-dark d-flex justify-content-center align-items-center">
+
+  <div class="container circle bg-info" style="height: 600px; width: 600px;"></div>
+  <div class="container glass">
+    <nav class="container text-light d-flex justify-content-between align-items-end mt-3">
+      <div class="container">
+        <h1 class="logo fw-bolder"><span class="text-info">IK</span><span class="text-info">.</span>dev</h1>
+      </div>
+      <div class="container">
+        <ul class="d-flex align-items-center gap-4 text-light fw-bold no-bullets">
+          <li>
+            <a href="" class="text-light active">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="" class="text-light">
+              About Me
+            </a>
+          </li>
+          <li>
+            <a href="" class="text-white">
+              Contact Me
+            </a>
+          </li>
+            <button class="btn text-white fw-bold btn-lg orange-btn px-4" style="margin-left: 35px;">Email</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="container d-flex justify-content-between text-white w-100 h-75 px-5">
+      <div class="container d-flex flex-column justify-content-center">
+        <p class="text-orange m-0" style="font-size: 1em;">Fullstack Web Developer</p>
+        <div class="h3 m-0 fw-bold mb-3" style="font-size: 3.5em;">Hello World, <span class="text-nowrap text-primary">I'm Kane</span></div>
+        <em class="text-light m-0 h5 i">"Building bridges between the frontend and backend worlds"</em>
+        <div class="mt-5">
+          <button class="btn btn-info text-light fw-bold m-0 border-info" style="width: 200px; height: 60px;">Projects</button>
+          <button class="btn btn-secondary fw-bold m-0 border-secondary" style="width: 200px; height: 60px;">Curriculum Vitae</button>
+        </div>
+      </div>
+      <div class="container side">
+        <div class="rel-1">
+          <img src="img/com-me.png" alt="" style="width: 500px;">
+        </div>
+        <div class="rel-2">
+          <img src="img/star.png" alt="" style="width: 180px;">
+        </div>
+        <div class="rel-3">
+          <img src="img/star.png" alt="" style="width: 100px;">
+        </div>
+        <div class="rel-4">
+          <img src="img/cat.png" alt="" style="width: 150px;">
+        </div>
+      </div>
+    </main>
+  </div>
+  
+
+
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
