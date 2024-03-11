@@ -426,3 +426,51 @@ const password = generatePassword(passwordLength,
                                   includeSymbols);
 
 console.log(`Generated password: ${password}`); */
+
+/* callback functions = used for sych program. must execute the first one before proceding to execute the next one.
+
+ -- Use to handle async operations:
+ 1. Reading a file
+ 2. Network request
+ 3. Interacting with databases
+
+
+function hello(callback) {
+  console.log('Hello');
+  callback();
+}
+
+function leave() {
+  console.log('Leave');
+}
+
+function wait() {
+  console.log('Wait');
+}
+
+function goodbye() {
+  console.log('Goodbye');
+}
+
+hello(wait);
+
+sum(displayConsole, 10, 5);
+sum(displayPage, 10, 5);
+
+function sum(callback, x, y) {
+  let result = x + y;
+  callback(result);
+}
+
+function displayConsole(result) {
+  console.log(result);
+}
+
+function displayPage(result) {
+  document.getElementById('myH1').textContent = result;
+}
+*/
+
+
+
+
