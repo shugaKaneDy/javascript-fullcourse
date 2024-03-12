@@ -501,7 +501,6 @@ function cube(element, index, array){
 function display(element) {
   console.log(element);
 }
-*/
 
 let fruits = ["apple", "orange", "banana", "coconut"];
 
@@ -524,5 +523,41 @@ function display(element) {
   console.log(element);
 }
 
+
+*/
+/* 
+
+floyds triangle
+const n = window.prompt("Enter a number")
+
+let printer = "";
+let number = 0;
+
+for (let i = 1; i <= n; i++) {
+  for (let j = 1; j <= i; j++) {
+    number += 1;
+    printer += number + " ";
+  }
+  printer += "\n";
+}
+console.log(printer);
+
+
+*/
+
+/* 
+multiplication table
+
+let printer = "";
+
+for (let i = 1; i <=10; i++) {
+  for (let j = 1; j <= 10; j++) {
+    printer += (i * j) + "\t";
+  }
+  printer += "\n";
+}
+
+console.log(printer);
+*/
 
 
