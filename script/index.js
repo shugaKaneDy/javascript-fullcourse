@@ -561,3 +561,122 @@ console.log(printer);
 */
 
 
+/* map() = accepts a callback and applies function to each element of an array, then return a new array.
+    -- Can us it to store a value, and can maintain the original array
+
+const numbers = [1,2,3,4,5];
+
+const squares = numbers.map(square);
+const cubes = numbers.map(cube);
+
+console.log(cubes);
+
+function square(element) {
+  return Math.pow(element, 2);
+}
+function cube(element) {
+  return Math.pow(element, 3);
+}
+
+const students = ["Spongebob", "Patrick", "Squidward", "Sandy"];
+
+const studentsUpper = students.map(upperCase);
+const studentsLower = students.map(lowerCase);
+
+console.log(studentsLower);
+
+function upperCase(element) {
+  return element.toUpperCase();
+}
+
+function lowerCase(element) {
+  return element.toLowerCase();
+}
+
+const dates = ["2024-01-10", "2025-02-20", "2026-03-30"];
+const formatedDates = dates.map(formatDate);
+
+console.log(formatedDates);
+
+function formatDate(element) {
+  const parts = element.split("-");
+  return `${parts[1]}/${parts[2]}/${parts[0]}`;
+}
+
+*/
+
+
+/* 
+fillter() = creates a new array by filtering out elements.
+          -- Returns array if it is true
+
+let numbers = [1,2,3,4,5,6,7];
+
+let evenNumbs = numbers.filter(isEven);
+let oddNumbs = numbers.filter(isOdd);
+
+console.log(evenNumbs);
+
+
+function isEven(element) {
+  return element % 2 === 0;
+}
+
+function isOdd(element) {
+  return element % 2 !== 0;
+}
+
+const ages = [16,17,18,18,19,20,60];
+const adults = ages.filter(isAdult);
+const children = ages.filter(isChild);
+
+console.log(children);
+
+function isAdult(element) {
+  return element >= 18;
+}
+function isChild(element) {
+  return element < 18;
+}
+
+const words = ["apple", "orange", "banana", "kiwi", "pomegranate", "coconut"];
+const shortWords = words.filter(getShortWords);
+const longWords = words.filter(getLongWords);
+
+console.log(longWords);
+
+function getShortWords(element) {
+  return element.length <= 6;
+}
+function getLongWords(element) {
+  return element.length > 6;
+}
+*/
+
+/* 
+reduce() = reduce the elemnts of an array to a single value
+
+const prices = [10,11,23,50,15,20]
+const total = prices.reduce(sum);
+
+console.log(`$${total.toFixed(2)}`);
+
+
+function sum(accumulator, element) {
+  return accumulator + element;
+}
+
+const grades = [75, 50, 90, 80, 65];
+
+const maximum = grades.reduce(maxGrade);
+const minimum = grades.reduce(minGrade);
+
+console.log(minimum);
+function maxGrade(accumulator, element) {
+  return Math.max(accumulator, element);
+}
+function minGrade(accumulator, element) {
+  return Math.min(accumulator, element);
+}
+*/
+
