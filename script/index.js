@@ -697,8 +697,6 @@ setTimeout(function() {
   console.log('hello');
 }, 3000);
 
-*/
-
 const numbers = [1,2,3,4,5,6];
 const squares = numbers.map(function(element) {
   return Math.pow(element, 2);
@@ -724,3 +722,24 @@ console.log(evenNums);
 console.log(oddNums);
 console.log(total);
 
+*/
+
+/* 
+Void Triangle
+
+let printer = ""
+let row = window.prompt("Enter a number of row:");
+row = Number(row);
+
+for (let i = 1; i <= row; i++) {
+  for (let j = 1; j <= i; j++) {
+    if (j === 1 || j === i || i === row) {
+      printer += "*";
+    } else {
+      printer += " ";
+    }
+  }
+  printer += "\n";
+}
+
+console.log(printer); */
