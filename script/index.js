@@ -825,3 +825,36 @@ document.getElementById("reset").addEventListener("click", ()=>{
   myArray = [];
   renderHTML();
 }); */
+
+/* 
+Arrow Function  = a concise way to write function expressions good for simple functions that you use only once (parameters) => some code
+
+
+const hello = (name, age) => {
+  console.log(`Hello ${name}`); 
+  console.log(`You are ${age} years old`);
+};  
+
+hello("Kane",25);
+
+setTimeout(() => console.log("Hello"), 3000);
+
+const numbers = [1,2,3,4,5,6];
+
+const squares = numbers.map((elements)=> Math.pow(elements, 2));
+const cubes = numbers.map((elements)=> Math.pow(elements, 3));
+const evenNumbs = numbers.filter((elements)=> elements % 2 === 0);
+const oddNumbs = numbers.filter((elements)=> elements % 2 !== 0);
+const total = numbers.reduce((accumulator, elements) => accumulator  + elements);
+
+
+console.log(squares);
+console.log(cubes);
+console.log(evenNumbs);
+console.log(oddNumbs);
+console.log(total);
+*/
+
+
+
+
