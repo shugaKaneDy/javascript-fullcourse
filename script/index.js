@@ -743,3 +743,85 @@ for (let i = 1; i <= row; i++) {
 }
 
 console.log(printer); */
+
+/* Stack Algorithm
+
+let myArray = [];
+
+function renderHTML(){
+  document.getElementById("render").innerHTML = myArray.join("<br>");
+}
+function stackUnderflow() {
+  document.getElementById("render").innerHTML = "Empty Stack";
+}
+function stackOverflow() {
+  document.getElementById("render").innerHTML = myArray.join("<br>") + "</br>Stack Overflow";
+}
+
+document.getElementById("pop").addEventListener("click", ()=>{
+
+  if (myArray.length <= 0) {
+    stackUnderflow();
+  } else {
+    myArray.splice(myArray.length - 1);
+    renderHTML();
+  }
+});
+
+document.getElementById("push").addEventListener("click", ()=>{
+
+  if (myArray.length >= 5) {
+    stackOverflow();
+  } else {
+    let num = document.getElementById("num").value;
+    num = Number(num);
+    myArray[myArray.length] = num;
+    renderHTML();
+  }
+});
+
+*/
+
+/* 
+
+Queue Algorithm
+
+let myArray = [];
+
+function renderHTML() {
+  document.getElementById("render").innerHTML = myArray.join("<br>");
+}
+function queueOverflow() {
+  document.getElementById("render").innerHTML = myArray.join("<br>") + "<br>Queue Overflow";
+}
+function queueUnderflow() {
+  document.getElementById("render").innerHTML = "Empty Queue";
+}
+
+
+document.getElementById("add").addEventListener("click", ()=>{
+
+  if (myArray.length >= 5) {
+    queueOverflow();
+  } else {
+    let num = document.getElementById("num").value;
+    num = Number(num);
+    myArray[myArray.length] = num;
+    renderHTML();
+    }
+});
+
+document.getElementById("remove").addEventListener("click", ()=>{
+
+  if (myArray.length <= 0) {
+    queueUnderflow();
+  } else {
+    myArray.splice(0, 1);
+    renderHTML();
+  }
+});
+
+document.getElementById("reset").addEventListener("click", ()=>{
+  myArray = [];
+  renderHTML();
+}); */
