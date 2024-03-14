@@ -894,3 +894,66 @@ person2.eat();
 */
 
 
+/* 
+
+this = reference to the object where THIS is used (the object depends on the immediate context) person.name = this.name
+
+const person1 = {
+  name: "Spongebob",
+  faveFood: "Humbergers",
+  sayHello: function() {console.log(`Hi I am ${this.name}`)},
+  eat: function() {console.log(`${this.name} is eating ${this.faveFood}`)}
+}
+
+const person2 = {
+  name: "Patrick",
+  faveFood: "Pizza  ",
+  sayHello: function() {console.log(`Hi I am ${this.name}`)},
+  eat: function() {console.log(`${this.name} is eating ${this.faveFood}`)}
+}
+
+person1.sayHello(); 
+person1.eat(); 
+person2.sayHello(); 
+person2.eat(); 
+*/
+
+/* 
+constructor = special method for defining the properties and methods of objects
+
+function Car(make, model, year, color) {
+  this.make = make;
+  this.model = model;
+  this.year = year;
+  this.color = color,
+
+  this.drive = function() {
+    console.log(`You drive ${this.model}`);
+  }
+}
+
+
+const car1 = new Car("Ford", "Mustang", 2024, "Red");
+const car2 = new Car("Chevrolet", "Camaro", 2025, "Blue");
+const car3 = new Car("Dodge", "Charger", 2026, "Silver",);
+
+console.log(car1.make);
+console.log(car1.model);
+console.log(car1.year);
+console.log(car1.color);
+
+console.log(car2.make);
+console.log(car2.model);
+console.log(car2.year);
+console.log(car2.color);
+
+console.log(car3.make);
+console.log(car3.model);
+console.log(car3.year);
+console.log(car3.color);
+
+car1.drive();
+car2.drive();
+car3.drive();
+*/
+
