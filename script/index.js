@@ -989,3 +989,60 @@ const total = product3.calculateTotal(salesTax);
 
 console.log(`The total price (with  tax): $${total.toFixed(2)}`);
 */
+
+/* 
+static = keyword that defines properties or methods  that belong to a class itself rather than the objects created from that class (class owns anything static, not the objects)
+
+inorder to get the value with a static variable you need to call their class name
+
+class MathUtil {
+  static PI = 3.14159;
+
+  static getDiameter(radius) {
+    return radius * 2;
+  }
+
+  static getCircumference(radius) {
+    return 2 * this.PI * radius;
+  }
+
+  static getArea(radius) {
+    return this.PI * radius * radius;
+  }
+}
+
+console.log(MathUtil.PI);
+
+console.log(MathUtil.getDiameter(10));
+console.log(MathUtil.getCircumference(10));
+console.log(MathUtil.getArea(10));
+
+class User {
+
+  static userCount = 0;
+
+  constructor(username) {
+    this.username = username;
+    User.userCount++;
+  }
+
+  static getUserCount() {
+    console.log(`There are ${User.userCount} users online`)
+  }
+
+  sayHello() {
+    console.log(`Hello, My username is ${this.username}`);
+  }
+}
+
+const user1 = new User("Spongbob");
+const user2 = new User("Patrick");
+const user3 = new User("Sandy");
+
+user1.sayHello();
+user2.sayHello();
+user3.sayHello();
+User.getUserCount();
+
+*/
+
