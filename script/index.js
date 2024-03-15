@@ -1049,8 +1049,6 @@ User.getUserCount();
 /* 
 inheritance = allows a new class to inherit properties and methods from existing classes (parent -> child) helps the code reusability
 
-*/
-
 class Animal {
   alive = true;
   eat() {
@@ -1085,7 +1083,7 @@ const rabbit = new Rabbit();
 const fish = new Fish();
 const hawk = new Hawk();
 
-/* rabbit.alive = false; */
+rabbit.alive = false;
 
 console.log(rabbit.alive);
 rabbit.eat();
@@ -1101,3 +1099,4 @@ console.log(hawk.alive);
 hawk.eat();
 hawk.sleep();
 hawk.fly();
+*/
