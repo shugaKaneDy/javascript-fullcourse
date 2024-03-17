@@ -1279,3 +1279,90 @@ console.log(person.fullname);
 console.log(person.age);
 */
 
+
+/* 
+destructuring = extract values from arrays and objects, then assign them to variables in a convinient way
+[] = to perform array destructuring
+{} = to perform object destructuring
+5 examples
+
+*/
+
+
+/* ex 1. swap the value of two variables */
+
+/* let a = 1;
+let b = 2;
+
+
+[a, b] = [b, a];
+
+console.log(a);
+console.log(b); */
+
+/* ex 2. elements in an array */
+
+/* const colors = ["red", "green", "blue", "black", "white"];
+
+[colors[0], colors[4]] = [colors[4], colors[0]];
+
+console.log(colors); */
+
+/* ex 3. assign array elements to variables */
+
+
+/* const colors = ["red", "green", "blue", "black", "white"];
+
+
+const [firstColor, secondColor, thirdColor, ...extraColors] = colors;
+
+console.log(firstColor);
+console.log(secondColor);
+console.log(thirdColor);
+console.log(extraColors); */
+
+/* ex 4. extract values from objects */
+
+/* const person1 = {
+  firstname: "Spongebob",
+  lastname: "Squarepants",
+  age: 30,
+  job: "Fry Cook",
+}
+
+const person2 = {
+  firstname: "Patrick",
+  lastname: "Star",
+  age: 34,
+}
+
+const {firstname, lastname, age, job="Unemployed"} = person1; // job = "Unemployed" works if job is undefined
+
+console.log(firstname);
+console.log(lastname);
+console.log(age);
+console.log(job); */
+
+
+/* ex 5. destructure in function parameters */
+
+/* function displayPerson({firstname, lastname, age, job = "Unemployed"}) {
+  console.log(`name: ${firstname} ${lastname}`);
+  console.log(`age: ${age}`);
+  console.log(`job: ${job}`);
+}
+
+const person1 = {
+  firstname: "Spongebob",
+  lastname: "Squarepants",
+  age: 30,
+  job: "Fry Cook",
+}
+
+const person2 = {
+  firstname: "Patrick",
+  lastname: "Star",
+  age: 34,
+}
+
+displayPerson(person1); */
