@@ -1366,3 +1366,66 @@ const person2 = {
 }
 
 displayPerson(person1); */
+
+
+/* 
+Nested object = Objects inside of other objects. Allows you to represent more complex data structures Child object is enclosed by Parent onject.
+
+Person{Address{}, ContactInfo{}}
+ShoppingCart{Keyboard{}, Mouse{}, Monitor{}}
+
+const person = {
+  fullname: "Spongebob Squarepants",
+  age: 30,
+  isStudent: true,
+  hobbies: ["karate", "jellyfishing", "cooking"],
+  address: {
+    street: "124 Conch St.",
+    city: "Bikini Bottom",
+    country: "Int. Water"
+  }
+}
+
+console.log(person.fullname);
+console.log(person.age);
+console.log(person.isStudent);
+console.log(person.hobbies);
+console.log(person.address.city);
+
+for(const property in person.address) {
+  console.log(person.address[property]);
+}
+
+class Person {
+
+  constructor(name, age, ...address) {
+    this.name = name;
+    this.age = age;
+    this.address = new Address(...address);
+  }
+}
+
+class Address {
+
+  constructor(street, city, country) {
+    this.street = street;
+    this.city = city;
+    this.country = country;
+  }
+}
+
+const person1 = new Person("Spongebob", 30, "124 Const St.", 
+                                            "Bikini Bottom", 
+                                            "Int. Waters");
+
+const person2 = new Person("Patrick", 37,   "128 Const St.", 
+                                            "Bikini Bottom", 
+                                            "Int. Waters");
+
+const person3 = new Person("Squidward", 35,   "126 Const St.", 
+                                              "Bikini Bottom", 
+                                              "Int. Waters");
+
+console.log(person1.address.street);
+*/
+
