@@ -1429,3 +1429,57 @@ const person3 = new Person("Squidward", 35,   "126 Const St.",
 console.log(person1.address.street);
 */
 
+
+/* 
+array of objects
+
+const fruits = [{name: "Apple", color: "red", calories: 95}, 
+                {name: "Orange", color: "orange", calories: 45}, 
+                {name: "Banana", color: "yellow", calories: 105}, 
+                {name: "Coconut", color: "white", calories: 159}, 
+                {name: "Pineapple", color: "yellow", calories: 37}];
+
+
+
+/* console.log(fruits[0].calories); */
+/* fruits.pop(); */
+/* fruits.push({name: "Grapes", color: "purple", calories: 62}); */
+
+/* fruits.splice(1, 2); */
+
+/* console.log(fruits); */
+
+/* fruits.forEach((fruits) => {
+  console.log(fruits.color);
+}); */
+
+/* const fruitName = fruits.map(fruits => fruits.name);
+const fruitColors = fruits.map(fruits => fruits.color);
+const fruitCalories = fruits.map(fruits => fruits.calories);
+
+console.log(fruitName);
+console.log(fruitColors);
+console.log(fruitCalories); */
+
+/* const yellowFruits = fruits.filter(fruits => fruits.color === 'yellow');
+const lowCalFruits = fruits.filter(fruits => fruits.calories <= 100);
+const highCalFruits = fruits.filter(fruits => fruits.calories >= 100);
+
+console.log(yellowFruits);
+console.log(lowCalFruits);
+console.log(highCalFruits);
+ */
+
+
+/* const maxFruit = fruits.reduce((max, fruit) => 
+                                fruit.calories > max.calories ?
+                                fruit : max);
+
+const minFruit = fruits.reduce((min, fruit) => 
+                                fruit.calories < min.calories ?
+                                fruit : min);
+
+console.log(maxFruit);
+console.log(maxFruit.calories);
+console.log(minFruit);
+console.log(minFruit.calories); */
