@@ -1804,5 +1804,71 @@ setInterval(updateClock,1000);
 
 */
 
+/* 
+
+Stop Watch
+
+const display = document.getElementById("display");
+let timer = null;
+let startTime = 0;
+let elapTime = 0;
+let isRunning = false;
+
+function start() {
+  
+  if(!isRunning) {
+    startTime = Date.now() - elapTime;
+    timer = setInterval(update, 10);
+    isRunning = true;
+  }
+
+}
+
+function stop() {
+
+
+  if(isRunning) {
+    clearInterval(timer);
+    elapTime = Date.now() - startTime;
+    isRunning = false;
+  }
+}
+
+function reset() {
+  
+  clearInterval(timer);
+  startTime = 0;
+  elapTime = 0;
+  isRunning = false;
+  display.textContent = "00:00:00:00"
+}
+
+function update() {
+
+
+  const currentTime = Date.now();
+  elapTime = currentTime - startTime;
+
+  let hours = Math.floor(elapTime /(1000 * 60 * 60));
+  let minutes = Math.floor(elapTime / (1000 * 60) % 60);
+  let seconds = Math.floor(elapTime / 1000 % 60);
+  let milliseconds = Math.floor(elapTime % 1000 / 10);
+
+  hours = String(hours).padStart(2, "0");
+  minutes = String(minutes).padStart(2, "0");
+  seconds = String(seconds).padStart(2, "0");
+  milliseconds = String(milliseconds).padStart(2, "0");
+
+  display.textContent = `${hours}:${minutes}:${seconds}:${milliseconds}`;
+}
+
+const startBtn = document.getElementById("startBtn");
+const stopBtn = document.getElementById("stopBtn");
+const resetBtn = document.getElementById("resetBtn");
+
+startBtn.addEventListener("click", start);
+stopBtn.addEventListener("click", stop);
+resetBtn.addEventListener("click", reset);
+*/
 
 
