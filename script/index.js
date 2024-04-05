@@ -1667,3 +1667,123 @@ document.querySelector('.clear').addEventListener('click', () => {
   console.log("Clear");
 });
 */
+
+
+/* let word = ["Hello", "Word", "My", "Name", "is"]
+
+word[1], word[3] = word[3], word[1];
+
+console.log(word); */
+
+/* let word = ["Hello", "Word", "My", "Name", "is"];
+
+
+[word[0], word[1]] = [word[1], word[0]];
+
+console.log(word); */
+
+/* let word = "focus";
+
+function shuffleWord(word) {
+  const [...arrayWord] = word;
+  let random = Math.floor(Math.random() * arrayWord.length);
+  let shuffleWord = "";
+
+  for (let i = 0; i < arrayWord.length; i++) {
+    [arrayWord[i], arrayWord[random]] = [arrayWord[random], arrayWord[i]];
+  }
+
+  for (let i = 0; i < arrayWord.length; i++) {
+    shuffleWord += arrayWord[i];
+  }
+
+  return shuffleWord;
+}
+
+console.log(shuffleWord(word)); */
+/* let number = [1, 5, 8, 2, 3];
+
+for (let i = 0; i < number.length; i++) {
+  for (let j = 0; j < number.length; j++) {
+    if(number[j] > number[i]) {
+      [number[j], number[i]] = [number[i], number[j]];
+    }
+  }
+}
+
+console.log(number); */
+
+const numberChars = "0123456789";
+const chars = "abcdefghijklmnopqrstuvwxyz";
+const symbolsChars = "!#$%^&*()_+=-";
+
+const allChars =  numberChars + chars + symbolsChars;
+
+function sortWord(word) {
+  const [...arrayWord] = word;
+  const [...arrayAllChars] = allChars;
+  let toNum = [];
+
+  /* let forI = 0;
+  let forJ = 0; */
+
+  let sortedWord = "";
+
+  for(let i = 0; i < arrayWord.length; i++) {
+    for(let j = 0; j < arrayAllChars.length; j++) {
+      if (arrayWord[i] === arrayAllChars[j]) {
+        toNum[toNum.length] = j;
+      }
+    }
+  }
+
+  for(let i = 0; i < toNum.length; i++) {
+    for(let j = 0; j < toNum.length; j++) {
+      if(toNum[j] > toNum[i]) {
+        [toNum[j], toNum[i]] = [toNum[i], toNum[j]];
+      }
+    }
+  }
+
+  for (let i = 0; i < toNum.length; i++) {
+    sortedWord += arrayAllChars[toNum[i]];
+  }
+
+  
+
+  /* for (let i = 0; i < arrayWord.length; i++) {
+    for (let j = 0; j < arrayWord.length; j++) {
+
+
+
+      for (let k = 0; k < arrayAllChars.length; k++) {
+        if (arrayWord[i] === arrayAllChars[k]) {
+          forI = k;
+        }
+      }
+
+      for(let l = 0; l < arrayWord.length; l++) {
+        if (arrayWord[j] === arrayAllChars[l]) {
+          forJ = l
+        }
+      }
+
+      if(forJ > forI) {
+        [arrayWord[j], arrayWord[i]] = [arrayWord[i], arrayWord[j]];
+      }
+
+      
+    }
+  } */
+  
+
+  /* for (let i = 0; i < arrayWord.length; i++) {
+    sortedWord += arrayWord[i];
+  } */
+
+  return sortedWord;
+
+}
+
+
+console.log(sortWord("aa3#%a!b1a"));
