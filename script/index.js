@@ -1700,8 +1700,12 @@ function shuffleWord(word) {
   return shuffleWord;
 }
 
+
 console.log(shuffleWord(word)); */
-/* let number = [1, 5, 8, 2, 3];
+
+/* sorting algo
+
+let number = [1, 5, 8, 2, 3];
 
 for (let i = 0; i < number.length; i++) {
   for (let j = 0; j < number.length; j++) {
@@ -1711,7 +1715,7 @@ for (let i = 0; i < number.length; i++) {
   }
 }
 
-console.log(number); */
+console.log(number);
 
 const numberChars = "0123456789";
 const chars = "abcdefghijklmnopqrstuvwxyz";
@@ -1723,9 +1727,6 @@ function sortWord(word) {
   const [...arrayWord] = word;
   const [...arrayAllChars] = allChars;
   let toNum = [];
-
-  /* let forI = 0;
-  let forJ = 0; */
 
   let sortedWord = "";
 
@@ -1749,41 +1750,59 @@ function sortWord(word) {
     sortedWord += arrayAllChars[toNum[i]];
   }
 
-  
-
-  /* for (let i = 0; i < arrayWord.length; i++) {
-    for (let j = 0; j < arrayWord.length; j++) {
-
-
-
-      for (let k = 0; k < arrayAllChars.length; k++) {
-        if (arrayWord[i] === arrayAllChars[k]) {
-          forI = k;
-        }
-      }
-
-      for(let l = 0; l < arrayWord.length; l++) {
-        if (arrayWord[j] === arrayAllChars[l]) {
-          forJ = l
-        }
-      }
-
-      if(forJ > forI) {
-        [arrayWord[j], arrayWord[i]] = [arrayWord[i], arrayWord[j]];
-      }
-
-      
-    }
-  } */
-  
-
-  /* for (let i = 0; i < arrayWord.length; i++) {
-    sortedWord += arrayWord[i];
-  } */
-
   return sortedWord;
-
 }
 
 
 console.log(sortWord("aa3#%a!b1a"));
+
+*/
+
+
+/* 
+Digital clock
+
+for military
+
+function updateClock() {
+  
+  const now = new Date();
+  const hours = now.getHours().toString().padStart(2, 0);
+  const minutes = now.getMinutes().toString().padStart(2, 0);
+  const seconds = now.getSeconds().toString().padStart(2, 0);
+
+  const timeString = `${hours}:${minutes}:${seconds}`;
+
+  const clock = document.getElementById("clock");
+  clock.innerText = timeString;
+}
+
+
+updateClock();
+setInterval(updateClock,1000);
+
+for am/pm
+function updateClock() {
+  
+  const now = new Date();
+  let hours = now.getHours();
+  const meridium = hours>= 12 ? "PM" : "AM"
+  hours = hours % 12 || 12;
+  hours = hours.toString().padStart(2, 0);  
+  const minutes = now.getMinutes().toString().padStart(2, 0);
+  const seconds = now.getSeconds().toString().padStart(2, 0);
+
+  const timeString = `${hours}:${minutes}:${seconds} ${meridium}`;
+
+  const clock = document.getElementById("clock");
+  clock.innerText = timeString;
+}
+
+
+updateClock();
+setInterval(updateClock,1000);
+
+*/
+
+
+
