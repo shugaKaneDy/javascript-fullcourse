@@ -1970,3 +1970,96 @@ catch (error) {
 
 console.log("You have reached the end");
 */
+
+/* 
+
+Calculator
+
+const display = document.getElementById("display");
+
+const plus = document.getElementById("plus");
+const seven = document.getElementById("seven");
+const eight = document.getElementById("eight");
+const nine = document.getElementById("nine");
+const minus = document.getElementById("minus");
+const four = document.getElementById("four");
+const five = document.getElementById("five");
+const six = document.getElementById("six");
+const multiply = document.getElementById("multiply");
+const one = document.getElementById("one");
+const two = document.getElementById("two");
+const three = document.getElementById("three");
+const divide = document.getElementById("divide");
+const zero = document.getElementById("zero");
+const dot = document.getElementById("dot");
+const equal = document.getElementById("equal");
+const clear = document.getElementById("clear");
+
+function appendToDisplay(input) {
+  display.value += input;
+}
+
+plus.addEventListener("click", () => {
+  appendToDisplay("+");
+});
+seven.addEventListener("click", () => {
+  appendToDisplay("7");
+});
+eight.addEventListener("click", () => {
+  appendToDisplay("8");
+});
+nine.addEventListener("click", () => {
+  appendToDisplay("9");
+});
+minus.addEventListener("click", () => {
+  appendToDisplay("-");
+});
+four.addEventListener("click", () => {
+  appendToDisplay("4");
+});
+five.addEventListener("click", () => {
+  appendToDisplay("5");
+});
+six.addEventListener("click", () => {
+  appendToDisplay("6");
+});
+multiply.addEventListener("click", () => {
+  appendToDisplay("*");
+});
+one.addEventListener("click", () => {
+  appendToDisplay("1");
+});
+two.addEventListener("click", () => {
+  appendToDisplay("2");
+});
+three.addEventListener("click", () => {
+  appendToDisplay("3");
+});
+divide.addEventListener("click", () => {
+  appendToDisplay("/");
+});
+zero.addEventListener("click", () => {
+  appendToDisplay("0");
+});
+dot.addEventListener("click", () => {
+  appendToDisplay(".");
+});
+equal.addEventListener("click", () => {
+  calculate();
+});
+clear.addEventListener("click", () => {
+  clearDisplay();
+});
+
+function clearDisplay() {
+  display.value = "";
+}
+
+function calculate() {
+  try {
+    display.value = eval(display.value);
+  } catch (error) {
+    display.value = "Error";
+  }
+}
+*/
