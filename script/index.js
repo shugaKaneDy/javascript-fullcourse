@@ -2267,3 +2267,49 @@ document.getElementById("fruits").removeChild(newListItem);
 
 */
 
+/* 
+Mouse Events
+
+eventListener = Listen for specific events to create interactive web pages events: click, mouseover, mouseout .addEventListener(event, callback)
+
+// const myBox = document.getElementById("my-box");
+// const myButton = document.getElementById("my-button");
+
+//function changeColor(event) {
+//  event.target.style.backgroundColor = "Tomato"
+//  event.target.innerHTML = "OUCH! &#x1F915;"
+//}
+
+//myBox.addEventListener("click", changeColor)
+
+// myBox.addEventListener("click", event => {
+// event.target.style.backgroundColor = "Tomato"
+// event.target.innerHTML = "OUCH! &#x1F915;"
+// });
+
+// myBox.addEventListener("mouseover", event => {
+//  event.target.style.backgroundColor = "Yellow"
+//  event.target.innerHTML = "Don't Do It! &#x1F610;"
+//});
+
+//myBox.addEventListener("mouseout", event => {
+//  event.target.style.backgroundColor = "lightgreen"
+//  event.target.innerHTML = "Click me &#128512;"
+//});
+
+
+// myButton.addEventListener("click", event => {
+//   myBox.style.backgroundColor = "Tomato"
+//   myBox.innerHTML = "OUCH! &#x1F915;"
+// });
+
+// myButton.addEventListener("mouseover", event => {
+//   myBox.style.backgroundColor = "Yellow"
+//   myBox.innerHTML = "Don't Do It! &#x1F610;"
+// });
+
+// myButton.addEventListener("mouseout", event => {
+//   myBox.style.backgroundColor = "lightgreen"
+//   myBox.innerHTML = "Click me &#128512;"
+// });
+*/
