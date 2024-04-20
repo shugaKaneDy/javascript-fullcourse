@@ -2313,3 +2313,78 @@ eventListener = Listen for specific events to create interactive web pages event
 //   myBox.innerHTML = "Click me &#128512;"
 // });
 */
+
+/* 
+eventListener = Listen for specific events to create interactive web pages
+
+events: keydown, keyup, keypress
+document.addEventListener(event, callback);
+
+// document.addEventListener("keydown", event => {
+//   console.log(`Key down =  ${event.key}`);
+// });
+
+// document.addEventListener("keyup", event => {
+//   console.log(`Key up =  ${event.key}`);
+// });
+
+// document.addEventListener("keydown", event => {
+//   myBox.innerHTML = "&#128512;";
+//   myBox.style.backgroundColor = "tomato";
+// });
+
+// document.addEventListener("keyup", event => {
+//   myBox.innerHTML = "&#128513;";
+//   myBox.style.backgroundColor = "lightblue";
+// });
+
+const myBox = document.getElementById("my-box");
+const movement = 10;
+let x = 0;
+let y = 0;
+
+document.addEventListener("keydown", event => {
+  myBox.innerHTML = "&#128512;";
+  myBox.style.backgroundColor = "tomato";
+});
+
+document.addEventListener("keyup", event => {
+  myBox.innerHTML = "&#128513;";
+  myBox.style.backgroundColor = "lightblue";
+});
+
+document.addEventListener("keydown", event => {
+  
+  if (event.key.startsWith("Arrow")) {
+
+    event.preventDefault();
+
+    switch(event.key) {
+      case "ArrowUp":
+        y -= movement;
+        break;
+      case "ArrowDown":
+        y += movement;
+        break;
+      case "ArrowLeft":
+        x -= movement;
+        break;
+      case "ArrowRight":
+        x += movement;
+        break;
+    }
+
+    myBox.style.top = `${y}px`;
+    myBox.style.left = `${x}px`;
+
+  }
+});
+
+
+
+// document.addEventListener("keyup", event => {
+//   myBox.innerHTML = "&#128513;";
+//   myBox.style.fontSize = "7.5rem";
+//   myBox.style.backgroundColor = "lightblue";
+// });
+*/
