@@ -2388,3 +2388,22 @@ document.addEventListener("keydown", event => {
 //   myBox.style.backgroundColor = "lightblue";
 // });
 */
+
+/* 
+
+Hide/Show img
+
+const myButton = document.getElementById("my-button");
+const myImg = document.getElementById("my-img");
+
+myButton.addEventListener("click", event => {
+
+  if (myImg.style.visibility === "hidden") {
+    myImg.style.visibility = "visible";
+    myButton.textContent = "Hide";
+  } else {
+    myImg.style.visibility = "hidden";
+    myButton.textContent = "Show";
+  }
+});
+*/
