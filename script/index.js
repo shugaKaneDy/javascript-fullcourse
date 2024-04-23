@@ -2465,3 +2465,81 @@ buttons.forEach (button => {
   });
 });
 */
+
+/* 
+
+classlist = Element property in javascript used to interact with an element's list of classes (CSS classes) Allows you to make reusable Classes for many elements accross your webpage
+
+add()
+remove()
+toggle(Remove if present, Add if not)
+replace(oldClass, newClass)
+contains()
+
+const myButton = document.getElementById("my-button");
+const myH1 = document.getElementById("my-h1");
+// myButton.classList.add("btn-info");
+// myButton.classList.remove("btn-info");
+// myButton.addEventListener("mouseover", event => {
+//   event.target.classList.toggle("hover");
+// });
+// myButton.addEventListener("mouseout", event => {
+//   event.target.classList.toggle("hover");
+// });
+
+// myButton.classList.add("btn-info");
+// myH1.classList.add("text-info");
+
+// myH1.addEventListener("click", event => {
+
+//   if (event.target.classList.contains("text-secondary")) {
+//     event.target.textContent = "Disabled";
+//   } else {
+//     event.target.classList.replace("text-info", "text-secondary");
+//   }
+
+// });
+
+// myButton.addEventListener("click", event => {
+
+//   if (event.target.classList.contains("btn-secondary")) {
+//     event.target.textContent = "Disabled";
+//   } else {
+//     event.target.classList.replace("btn-info", "btn-secondary");
+//   }
+
+// });
+
+let buttons = document.querySelectorAll(".myButtons");
+
+buttons.forEach(button => {
+  button.classList.add("btn-info");
+});
+
+// buttons.forEach(button => {
+//   button.classList.remove("btn-info");
+// });
+
+buttons.forEach(button => {
+  button.addEventListener("mouseover", event => {
+    event.target.classList.toggle("hover");
+  });
+});
+buttons.forEach(button => {
+  button.addEventListener("mouseout", event => {
+    event.target.classList.toggle("hover");
+  });
+});
+
+buttons.forEach(button => {
+  button.addEventListener("click", event => {
+
+    if (event.target.classList.contains("btn-secondary")) {
+      event.target.textContent = "Disabled";
+    } else {
+      event.target.classList.replace("btn-info", "btn-secondary");
+    }
+
+  });
+})
+*/
