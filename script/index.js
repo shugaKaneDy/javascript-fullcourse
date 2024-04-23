@@ -2407,3 +2407,61 @@ myButton.addEventListener("click", event => {
   }
 });
 */
+
+
+/* 
+
+Nodelist = Static collection of HTML elements by (id, class, element) Can be created by using querySelectorAll() Similar to array, but no (map, filter, reduce) Nodelist won't update to automatically reflect changes
+
+let buttons = document.querySelectorAll(".myButtons");
+
+// ADD HTML/CSS PROPERTIES
+
+// buttons.forEach(button => {
+//   button.style.backgroundColor = "Green";
+//   button.textContent += "RED";
+// });
+
+// Click event listener
+
+// buttons.forEach(button => {
+//   button.addEventListener("click", event => {
+//     event.target.style.backgroundColor = "Tomato"
+//   });
+// });
+
+// MOUSEOVER + MOUSEOUT event listener
+
+// buttons.forEach(button => {
+//   button.addEventListener("mouseover", event => {
+//     event.target.style.backgroundColor = "hsl(205, 100%, 40%)";
+//   });
+
+//   button.addEventListener("mouseout", event => {
+//     event.target.style.backgroundColor = "hsl(205, 100%, 60%)";
+//   });
+// });
+
+// ADD AN ELEMENT
+
+// const newButton = document.createElement("button"); // STEP 1
+// newButton.textContent = "Button 5"  // STEP 2
+// newButton.style.fontSize = "2rem";
+// newButton.classList = "myButtons btn btn-info text-light";
+// document.body.appendChild(newButton);  // STEP 3
+
+// console.log(buttons) // button 5 not included on the nodelist since nodelist is static
+
+// buttons = document.querySelectorAll(".myButtons");
+// console.log(buttons)
+
+// REMOVE AN ELEMENT
+
+buttons.forEach (button => {
+  button.addEventListener("click", event => {
+    event.target.remove();
+    buttons = document.querySelectorAll(".myButtons");
+    console.log(buttons);
+  });
+});
+*/
