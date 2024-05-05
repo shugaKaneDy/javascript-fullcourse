@@ -2873,3 +2873,49 @@ async function doChores () {
 
 doChores();
 */
+
+/* 
+
+JSON = (Javascript Object Notation) data-interchange format used for exchanging data between a server and a web application. JSON files {key: value} OR [value1, value2, value3, ...]
+
+JSON.stringify() = converts a JS Object to a JSON string.
+JSON.parse() = converts a JSON string to a JS object
+
+// const names =["Spongebob", "Patrick", "Squidward", "Sandy"];
+// const person = { "name": "Spongebob", "age": 30, "isEmployed": true, "hobbies": ["Jellyfishing", "karate", "cooking"]};
+// const people = [{"name": "Spongebob", "age": 30, "isEmployed": true},
+//                 {"name": "Patrick", "age": 34, "isEmployed": false},
+//                 {"name": "Squidward", "age": 50, "isEmployed": true},
+//                 {"name": "Sandy", "age": 40, "isEmployed": false}];
+// const jsonNames =`["Spongebob", "Patrick", "Squidward", "Sandy"]`;
+// const jsonPerson = `{ "name": "Spongebob", "age": 30, "isEmployed": true, "hobbies": ["Jellyfishing", "karate", "cooking"]}`;
+// const jsonPeople = `[{"name": "Spongebob", "age": 30, "isEmployed": true},
+//                 {"name": "Patrick", "age": 34, "isEmployed": false},
+//                 {"name": "Squidward", "age": 50, "isEmployed": true},
+//                 {"name": "Sandy", "age": 40, "isEmployed": false}]`;
+
+// const jsonString = JSON.stringify(names);
+// const jsonString = JSON.stringify(person);
+// const jsonString = JSON.stringify(people);
+
+// const parseData = JSON.parse(jsonNames);
+// const parseData = JSON.parse(jsonPerson);
+// const parseData = JSON.parse(jsonPeople);
+// console.log(parseData);
+
+// fetch("json/person.json")
+//     .then(response => response.json())
+//     .then(value => console.log(value));
+// fetch("json/names.json")
+//     .then(response => response.json())
+//     .then(value => console.log(value));
+// fetch("json/people.json")
+//     .then(response => response.json())
+//     .then(value => console.log(value));
+
+// fetch("json/people.json")
+//     .then(response => response.json())
+//     .then(values => values.forEach(value => console.log(value.isEmployed)))
+//     .catch(error => console.error(error));
+ 
+*/
