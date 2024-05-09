@@ -2919,3 +2919,54 @@ JSON.parse() = converts a JSON string to a JS object
 //     .catch(error => console.error(error));
  
 */
+
+/* 
+
+fetch =function used for making HTTP requests to fetch resources. (JSON style data, images, files) Simplifies asynchronous data fetching in a Javascript and used for interacting with APIs to retrieve and send data asynchronously over the web.
+
+fetch(url, {options}) method: POST,GET,PUT,DELETE
+
+ even if we can't locate a resource a PROMISE still gonna RESOLVE 
+
+// fetch("https://pokeapi.co/api/v2/pokemon/pikachu")
+//       .then(response => {
+//         if(!response.ok) {
+//           throw new Error("Could not fetch resource");
+//         }
+//         return response.json();
+//       })
+//       .then(data => console.log(data.id))
+//       .catch(error => console.error(error));
+
+const fetchPokemonBtn = document.getElementById("fetchPokemon").addEventListener("click", fetchData);
+
+
+async function fetchData() {
+
+  const imgElement = document.getElementById("pokemonSprite");
+  
+  try {
+
+    document.getElementById("notFound").innerHTML = "";
+
+    const pokemonName = document.getElementById("pokemonName").value.toLowerCase();
+
+    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
+
+    if (!response.ok) {
+      throw new Error("Could not fetch resource");
+    }
+    const data = await response.json();
+    const pokemonSprite = data.sprites.front_default;
+
+    imgElement.src = pokemonSprite;
+    imgElement.style.display = "block";
+  }
+  catch(error) {
+    imgElement.style.display = "none";
+    document.getElementById("notFound").innerHTML = "Pokemon not found";
+    console.error(error);
+  }
+}
+
+*/
