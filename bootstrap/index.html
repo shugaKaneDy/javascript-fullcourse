@@ -372,6 +372,48 @@
     </div>
   </section>
 
+  <!-- get updates / modal trigger -->
+
+  <section class="bg-light">
+    <div class="container">
+      <div class="text-center">
+        <h2>Stay in the loop</h2>
+        <p class="lead">Get the latest updates as they happen...</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <p class="text-muted my-4">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium nemo voluptatum dolore placeat impedit veniam, ipsam et commodi in ad tempore facere, similique mollitia architecto molestiae recusandae earum sed eveniet!
+          </p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">
+            Register for Updates
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- modal itself -->
+
+  <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true" data-bs-backdrop="static">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-title">Get the latest Updates</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam reprehenderit doloribus ad, quas dolor error rem. At, provident commodi voluptatem, tempore aliquam nulla doloribus optio, impedit facilis officiis eaque. Perspiciatis?</p>
+          <label for="modal-email" class="form-label">Your Email Address</label>
+          <input type="email" class="form-control" id="modal-email" placeholder="e.g. mario@example.com">
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- offcanvas -->
   
   <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
